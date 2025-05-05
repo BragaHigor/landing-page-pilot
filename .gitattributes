@@ -1,0 +1,7 @@
+# Normalize todos os arquivos de texto para uso de LF
+* text=auto eol=lf
+
+# Declare binários para que não sejam tocados
+*.svg binary
+*.png binary
+*.jpg binary
