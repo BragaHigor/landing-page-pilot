@@ -8,8 +8,8 @@ import {
 } from "react-icons/ri";
 
 interface SocialsProps {
-   containerStyles: string;
-   iconStyles: string;
+   containerStyles?: string;
+   iconStyles?: string;
 }
 
 interface IconProps {

@@ -3,6 +3,7 @@
 import { Link as ScrollLink } from "react-scroll";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import Logo from "./Logo";
+import NavMobile from "./NavMobile";
 
 interface LinksProps {
    name: string;
@@ -34,7 +35,7 @@ const links: LinksProps[] = [
 
 const Header = () => {
    return (
-      <header className="bg-primary py-4 sticky top-0">
+      <header className="bg-primary py-4">
          <div className="container mx-auto">
             <div className="flex items-center justify-between">
                <div>
@@ -70,6 +71,9 @@ const Header = () => {
                      </div>
                   </button>
                </nav>
+               <div className="xl:hidden ">
+                  <NavMobile />
+               </div>
             </div>
          </div>
       </header>
