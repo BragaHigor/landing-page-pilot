@@ -2,11 +2,14 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 
 interface ButtonProps {
    children: React.ReactNode;
+   backgroundColor?: string;
 }
 
-const Button = ({ children }: ButtonProps) => {
+const Button = ({ children, backgroundColor = "bg-accent" }: ButtonProps) => {
    return (
-      <button className="w-[120px] h-[54px] py-[5px] pl-[10px] pr-[5px] flex items-center justify-between min-w-[200px] group bg-accent">
+      <button
+         className={`w-[120px] h-[54px] py-[5px] pl-[10px] pr-[5px] flex items-center justify-between min-w-[200px] group ${backgroundColor}`}
+      >
          <div className="flex-1 text-center tracking-[1.2px] font-primary font-bold text-primary text-sm uppercase">
             {children}
          </div>
