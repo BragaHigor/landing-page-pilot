@@ -107,7 +107,7 @@ const serviceDataMock: ServiceDataProps[] = [
 const Services = () => {
    const [activeTab, setActiveTab] = useState("construction");
    return (
-      <section id="services" className="pt-16 pb-16 xl:pt-32">
+      <section id="services" className="pt-16 xl:pt-32">
          <div className="container mx-auto">
             <div className="text-center max-w-[540px] mx-auto mb-20">
                <Pretitle text="Our Services" center={true} />
