@@ -1,6 +1,6 @@
 interface PretitleProps {
    text: string;
-   center?: string;
+   center?: boolean;
 }
 
 const Pretitle = ({ text, center }: PretitleProps) => {
