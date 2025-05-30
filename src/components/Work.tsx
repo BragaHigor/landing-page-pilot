@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Pretitle from "./Pretitle";
 import { RiArrowRightUpLine, RiCheckboxCircleFill } from "react-icons/ri";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 interface workDataProps {
    img: string;
@@ -41,16 +43,28 @@ const Work = () => {
    return (
       <div id="projects" className="pt-16 xl:pt-32">
          <div className="container mx-auto">
-            <div className="text-center max-w-[540px] mx-auto xl:mb-20">
+            <motion.div
+               variants={fadeIn("up", 0.2)}
+               initial="hidden"
+               whileInView="show"
+               viewport={{ once: false, amount: 0.2 }}
+               className="text-center max-w-[540px] mx-auto xl:mb-20"
+            >
                <Pretitle text="Our work" center={true} />
                <h2 className="h2 mb-3">Discover Our Projects</h2>
                <p className="mb-11 max-w-[480px] mx-auto">
                   Providing expert services designer to deliver quality and
                   innovation in every project we undertake
                </p>
-            </div>
+            </motion.div>
          </div>
-         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+         <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.2 }}
+            className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4"
+         >
             {workDataMock.map((item, index) => {
                return (
                   <div
@@ -84,7 +98,7 @@ const Work = () => {
                   </div>
                );
             })}
-         </div>
+         </motion.div>
       </div>
    );
 };

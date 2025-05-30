@@ -27,7 +27,7 @@ const Home = () => {
    }, []);
 
    return (
-      <div>
+      <div className="overflow-hidden">
          <Topbar />
          <div className="relative z-10">
             <Header />
@@ -48,8 +48,6 @@ const Home = () => {
          <Faq />
          <Contact />
          <Footer />
-
-         {/* <div className="h-[1000px]"></div> */}
       </div>
    );
 };

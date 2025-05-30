@@ -7,10 +7,18 @@ import {
    RiArrowRightLine,
 } from "react-icons/ri";
 import Socials from "./Socials";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 const Footer = () => {
    return (
-      <footer className="mt-16 xl:mt-32 bg-primary">
+      <motion.footer
+         variants={fadeIn("up", 0.1)}
+         initial="hidden"
+         whileInView="show"
+         viewport={{ once: false, amount: 0.1 }}
+         className="mt-16 xl:mt-32 bg-primary"
+      >
          <div className="container mx-auto">
             <div className="py-16 xl:py-[100px] flex flex-col xl:flex-row gap-[60px] xl:gap-[30px]">
                <div className="flex-1">
@@ -74,7 +82,7 @@ const Footer = () => {
                iconStyles="hover:text-accent transition-all"
             />
          </div>
-      </footer>
+      </motion.footer>
    );
 };
 
