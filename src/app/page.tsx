@@ -1,17 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import About from "@/components/About";
-import Contact from "@/components/Contact";
-import Faq from "@/components/Faq";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import Stats from "@/components/Stats";
-import Testimonials from "@/components/Testimonials";
-import Topbar from "@/components/Topbar";
-import Work from "@/components/Work";
+import About from "@/components/sections/About";
+import Contact from "@/components/sections/Contact";
+import Faq from "@/components/sections/Faq";
+import Footer from "@/components/sections/Footer";
+import Header from "@/components/sections/Header";
+import Hero from "@/components/sections/Hero";
+import Services from "@/components/sections/Services";
+import Stats from "@/components/sections/Stats";
+import Testimonials from "@/components/sections/Testimonials";
+import Topbar from "@/components/sections/Topbar";
+import Work from "@/components/sections/Work";
 
 const Home = () => {
    const [headerActive, setHeaderActive] = useState(false);

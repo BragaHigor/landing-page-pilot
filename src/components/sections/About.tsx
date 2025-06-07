@@ -2,7 +2,7 @@ import Image from "next/image";
 import Pretitle from "./Pretitle";
 import Button from "./Button";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
+import { fadeIn } from "../../utils/variants";
 
 const About = () => {
    return (
@@ -11,7 +11,7 @@ const About = () => {
             <div className="flex flex-col gap-12 xl:gap-0 xl:flex-row xl:items-center">
                <div className="flex-1">
                   <motion.div
-                     variants={fadeIn("right", 0.2)}
+                     variants={fadeIn({ direction: "right", delay: 0.2 })}
                      initial="hidden"
                      whileInView="show"
                      viewport={{ once: false, amount: 0.2 }}
@@ -40,7 +40,7 @@ const About = () => {
                   </motion.div>
                </div>
                <motion.div
-                  variants={fadeIn("left", 0.2)}
+                  variants={fadeIn({ direction: "left", delay: 0.2 })}
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: false, amount: 0.2 }}

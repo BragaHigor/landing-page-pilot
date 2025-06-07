@@ -8,12 +8,12 @@ import {
 } from "react-icons/ri";
 import Socials from "./Socials";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
+import { fadeIn } from "../../utils/variants";
 
 const Footer = () => {
    return (
       <motion.footer
-         variants={fadeIn("up", 0.1)}
+         variants={fadeIn({ direction: "up", delay: 0.1 })}
          initial="hidden"
          whileInView="show"
          viewport={{ once: false, amount: 0.1 }}

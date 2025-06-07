@@ -1,7 +1,7 @@
 import Button from "./Button";
 
 import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
+import { fadeIn } from "../../utils/variants";
 
 const Hero = () => {
    return (
@@ -10,7 +10,7 @@ const Hero = () => {
          <div className="container mx-auto h-full flex items-center">
             <div className="z-20 text-white text-center xl:text-left mx-auto xl:mx-0 flex flex-col items-center xl:items-start max-w-[608px]">
                <motion.h1
-                  variants={fadeIn("up", 0.2)}
+                  variants={fadeIn({ direction: "up", delay: 0.2 })}
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: false, amount: 0.8 }}
@@ -20,7 +20,7 @@ const Hero = () => {
                   solutions
                </motion.h1>
                <motion.p
-                  variants={fadeIn("up", 0.4)}
+                  variants={fadeIn({ direction: "up", delay: 0.4 })}
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: false, amount: 0.8 }}
@@ -31,7 +31,7 @@ const Hero = () => {
                   inspire confidence and stand firm for years.
                </motion.p>
                <motion.div
-                  variants={fadeIn("up", 0.4)}
+                  variants={fadeIn({ direction: "up", delay: 0.4 })}
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: false, amount: 0.8 }}

@@ -12,7 +12,7 @@ import Image from "next/image";
 import Button from "./Button";
 import Pretitle from "./Pretitle";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
+import { fadeIn } from "../../utils/variants";
 
 interface Thumb {
    url: string;
@@ -117,7 +117,7 @@ const Services = () => {
       <section id="services" className="pt-16 xl:pt-32">
          <div className="container mx-auto">
             <motion.div
-               variants={fadeIn("up", 0.2)}
+               variants={fadeIn({ direction: "up", delay: 0.2 })}
                initial="hidden"
                whileInView="show"
                viewport={{ once: false, amount: 0.2 }}
@@ -131,7 +131,7 @@ const Services = () => {
                </p>
             </motion.div>
             <motion.div
-               variants={fadeIn("up", 0.3)}
+               variants={fadeIn({ direction: "up", delay: 0.3 })}
                initial="hidden"
                whileInView="show"
                viewport={{ once: false, amount: 0.2 }}

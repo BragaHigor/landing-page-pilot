@@ -7,8 +7,8 @@ import {
    SelectTrigger,
    SelectValue,
 } from "@/components/ui/select";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
+import { Input } from "../ui/input";
+import { Textarea } from "../ui/textarea";
 import Button from "./Button";
 
 const Form = () => {

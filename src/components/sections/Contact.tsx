@@ -2,13 +2,13 @@ import { RiChat1Line, RiMap2Line, RiSmartphoneLine } from "react-icons/ri";
 import Socials from "./Socials";
 import Form from "./Form";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
+import { fadeIn } from "../../utils/variants";
 
 const Contact = () => {
    return (
       <section id="contact" className="pt-16 xl:pt-32">
          <motion.div
-            variants={fadeIn("up", 0.1)}
+            variants={fadeIn({ direction: "up", delay: 0.1 })}
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.2 }}
