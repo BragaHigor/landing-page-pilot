@@ -22,7 +22,7 @@ const About = () => {
                         Focused On Excellence In Every Project
                      </h2>
                      <p className="mb-11">
-                        Our unweavering commitment to excellence drives every
+                        Our unweavering commitment to excellenc drives every
                         project we undertake. From concept to completion, we
                         meticulously craft solutions that embody quality,
                         precision and innovation.
