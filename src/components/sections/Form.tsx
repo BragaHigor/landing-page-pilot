@@ -9,9 +9,9 @@ import {
 } from "@/components/ui/select";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
-import Button from "./Button";
+import { Button } from "./Button";
 
-const Form = () => {
+export function Form() {
    return (
       <form className="flex flex-col">
          <div className="flex flex-col gap-[20px] mb-[20px]">
@@ -46,6 +46,4 @@ const Form = () => {
          </div>
       </form>
    );
-};
-
-export default Form;
+}

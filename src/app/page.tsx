@@ -1,19 +1,19 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import About from "@/components/sections/About";
-import Contact from "@/components/sections/Contact";
-import Faq from "@/components/sections/Faq";
-import Footer from "@/components/sections/Footer";
-import Header from "@/components/sections/Header";
-import Hero from "@/components/sections/Hero";
-import Services from "@/components/sections/Services";
-import Stats from "@/components/sections/Stats";
-import Testimonials from "@/components/sections/Testimonials";
-import Topbar from "@/components/sections/Topbar";
-import Work from "@/components/sections/Work";
+import { About } from "@/components/sections/About";
+import { Contact } from "@/components/sections/Contact";
+import { Faq } from "@/components/sections/Faq";
+import { Footer } from "@/components/sections/Footer";
+import { Header } from "@/components/sections/Header";
+import { Hero } from "@/components/sections/Hero";
+import { Services } from "@/components/sections/Services";
+import { Stats } from "@/components/sections/Stats";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { Topbar } from "@/components/sections/Topbar";
+import { Work } from "@/components/sections/Work";
 
-const Home = () => {
+export default function Home() {
    const [headerActive, setHeaderActive] = useState(false);
 
    useEffect(() => {
@@ -50,6 +50,4 @@ const Home = () => {
          <Footer />
       </div>
    );
-};
-
-export default Home;
+}

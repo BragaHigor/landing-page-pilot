@@ -1,9 +1,9 @@
 "use client";
 
 import { Link as ScrollLink } from "react-scroll";
-import Logo from "./Logo";
-import NavMobile from "./NavMobile";
-import Button from "./Button";
+import { Logo } from "./Logo";
+import { NavMobile } from "./NavMobile";
+import { Button } from "./Button";
 
 interface LinksProps {
    name: string;
@@ -33,7 +33,7 @@ const links: LinksProps[] = [
    },
 ];
 
-const Header = () => {
+export function Header() {
    return (
       <header className="bg-primary py-4">
          <div className="container mx-auto">
@@ -71,6 +71,4 @@ const Header = () => {
          </div>
       </header>
    );
-};
-
-export default Header;
+}

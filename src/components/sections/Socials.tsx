@@ -36,7 +36,7 @@ const socials: IconProps[] = [
    },
 ];
 
-const Socials = ({ containerStyles, iconStyles }: SocialsProps) => {
+export function Socials({ containerStyles, iconStyles }: SocialsProps) {
    return (
       <div className={`${containerStyles}`}>
          {socials.map((item, index) => {
@@ -48,6 +48,4 @@ const Socials = ({ containerStyles, iconStyles }: SocialsProps) => {
          })}
       </div>
    );
-};
-
-export default Socials;
+}

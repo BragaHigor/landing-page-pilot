@@ -23,7 +23,7 @@ const statsData: StatsDataProps[] = [
    createStats(26, "+", "Years of Experience"),
 ];
 
-const Stats = () => {
+export function Stats() {
    const ref = useRef(null);
    const inView = useInView(ref, { threshold: 0.2 });
    return (
@@ -52,6 +52,4 @@ const Stats = () => {
          </div>
       </div>
    );
-};
-
-export default Stats;
+}

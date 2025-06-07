@@ -3,7 +3,7 @@ interface PretitleProps {
    center?: boolean;
 }
 
-const Pretitle = ({ text, center }: PretitleProps) => {
+export function Pretitle({ text, center }: PretitleProps) {
    return (
       <div
          className={`flex items-center gap-3 mb-4 ${
@@ -15,6 +15,4 @@ const Pretitle = ({ text, center }: PretitleProps) => {
          <div className="w-2 h-2 bg-accent"></div>
       </div>
    );
-};
-
-export default Pretitle;
+}

@@ -10,8 +10,8 @@ import {
    SheetTrigger,
 } from "@/components/ui/sheet";
 import { RiMenu3Fill } from "react-icons/ri";
-import Logo from "./Logo";
-import Socials from "./Socials";
+import { Logo } from "./Logo";
+import { Socials } from "./Socials";
 import { Link as ScrollLink } from "react-scroll";
 
 interface LinksProps {
@@ -42,7 +42,7 @@ const links: LinksProps[] = [
    },
 ];
 
-const NavMobile = () => {
+export function NavMobile() {
    const [isOpen, setIsOpen] = useState(false);
    return (
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -89,6 +89,4 @@ const NavMobile = () => {
          </SheetContent>
       </Sheet>
    );
-};
-
-export default NavMobile;
+}

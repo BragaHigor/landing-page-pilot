@@ -1,10 +1,10 @@
 import { RiChat1Line, RiMap2Line, RiSmartphoneLine } from "react-icons/ri";
-import Socials from "./Socials";
-import Form from "./Form";
+import { Socials } from "./Socials";
+import { Form } from "./Form";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/variants";
 
-const Contact = () => {
+export function Contact() {
    return (
       <section id="contact" className="pt-16 xl:pt-32">
          <motion.div
@@ -92,6 +92,4 @@ const Contact = () => {
          </motion.div>
       </section>
    );
-};
-
-export default Contact;
+}

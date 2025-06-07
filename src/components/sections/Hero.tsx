@@ -1,9 +1,8 @@
-import Button from "./Button";
-
+import { Button } from "./Button";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/variants";
 
-const Hero = () => {
+export function Hero() {
    return (
       <section className="h-[70vh] bg-hero bg-no-repeat bg-cover bg-center relative">
          <div className="absolute inset-0 bg-gradient-to-l from-black/0 via-black/50 to-black/70 z-10"></div>
@@ -42,6 +41,4 @@ const Hero = () => {
          </div>
       </section>
    );
-};
-
-export default Hero;
+}

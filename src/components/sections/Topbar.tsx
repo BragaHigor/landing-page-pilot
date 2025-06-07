@@ -1,7 +1,7 @@
 import { RiPhoneFill, RiMailFill } from "react-icons/ri";
-import Socials from "@/components/sections/Socials";
+import { Socials } from "@/components/sections/Socials";
 
-const Topbar = () => {
+export function Topbar() {
    return (
       <section
          id="home"
@@ -35,6 +35,4 @@ const Topbar = () => {
          </div>
       </section>
    );
-};
-
-export default Topbar;
+}

@@ -5,7 +5,10 @@ interface ButtonProps {
    backgroundColor?: string;
 }
 
-const Button = ({ children, backgroundColor = "bg-accent" }: ButtonProps) => {
+export function Button({
+   children,
+   backgroundColor = "bg-accent",
+}: ButtonProps) {
    return (
       <button
          className={`w-[120px] h-[54px] py-[5px] pl-[10px] pr-[5px] flex items-center justify-between min-w-[200px] group ${backgroundColor}`}
@@ -18,6 +21,4 @@ const Button = ({ children, backgroundColor = "bg-accent" }: ButtonProps) => {
          </div>
       </button>
    );
-};
-
-export default Button;
+}

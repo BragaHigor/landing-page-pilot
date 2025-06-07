@@ -2,9 +2,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
-import SliderBtns from "./SliderBtns";
+import { SliderBtns } from "./SliderBtns";
 
-const Slider = () => {
+export function Slider() {
    return (
       <Swiper className="bg-white shadow-custom w-full max-w-[630px] h-[200px]">
          <SwiperSlide>
@@ -81,6 +81,4 @@ const Slider = () => {
          </div>
       </Swiper>
    );
-};
-
-export default Slider;
+}

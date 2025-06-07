@@ -8,7 +8,7 @@ interface FaqItemProps {
    description: string;
 }
 
-const FaqItem = ({ title, description }: FaqItemProps) => {
+export function FaqItem({ title, description }: FaqItemProps) {
    const [isOpen, setIsOpen] = useState(false);
    return (
       <div className="w-full border-b">
@@ -48,6 +48,4 @@ const FaqItem = ({ title, description }: FaqItemProps) => {
          </div>
       </div>
    );
-};
-
-export default FaqItem;
+}

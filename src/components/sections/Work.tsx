@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import Pretitle from "./Pretitle";
 import { RiArrowRightUpLine, RiCheckboxCircleFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/variants";
+import { Pretitle } from "./Pretitle";
 
 interface workDataProps {
    img: string;
@@ -39,7 +39,7 @@ const workDataMock: workDataProps[] = [
    },
 ];
 
-const Work = () => {
+export function Work() {
    return (
       <div id="projects" className="pt-16 xl:pt-32">
          <div className="container mx-auto">
@@ -101,6 +101,4 @@ const Work = () => {
          </motion.div>
       </div>
    );
-};
-
-export default Work;
+}

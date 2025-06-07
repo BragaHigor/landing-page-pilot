@@ -2,7 +2,7 @@
 import { useSwiper } from "swiper/react";
 import { RiArrowLeftLine, RiArrowRightLine } from "react-icons/ri";
 
-const SliderBtns = () => {
+export function SliderBtns() {
    const swiper = useSwiper();
    return (
       <div className="w-max absolute bottom-2 right-2 flex gap-1 z-10">
@@ -20,6 +20,4 @@ const SliderBtns = () => {
          </button>
       </div>
    );
-};
-
-export default SliderBtns;
+}

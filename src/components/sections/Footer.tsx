@@ -6,11 +6,11 @@ import {
    RiMailFill,
    RiArrowRightLine,
 } from "react-icons/ri";
-import Socials from "./Socials";
+import { Socials } from "./Socials";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/variants";
 
-const Footer = () => {
+export function Footer() {
    return (
       <motion.footer
          variants={fadeIn({ direction: "up", delay: 0.1 })}
@@ -84,6 +84,4 @@ const Footer = () => {
          </div>
       </motion.footer>
    );
-};
-
-export default Footer;
+}

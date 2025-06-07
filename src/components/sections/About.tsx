@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Pretitle from "./Pretitle";
-import Button from "./Button";
+import { Pretitle } from "./Pretitle";
+import { Button } from "./Button";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/variants";
 
-const About = () => {
+export function About() {
    return (
       <div id="about" className="pt-16 xl:pt-32">
          <div className="container mx-auto">
@@ -61,6 +61,4 @@ const About = () => {
          </div>
       </div>
    );
-};
-
-export default About;
+}

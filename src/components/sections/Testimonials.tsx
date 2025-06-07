@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Button from "./Button";
-import Pretitle from "./Pretitle";
-import Slider from "./Slider";
+import { Button } from "./Button";
+import { Pretitle } from "./Pretitle";
+import { Slider } from "./Slider";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/variants";
 
-const Testimonials = () => {
+export function Testimonials() {
    return (
       <section className="pt-16 xl:pt-32">
          <div className="container mx-auto">
@@ -63,6 +63,4 @@ const Testimonials = () => {
          </div>
       </section>
    );
-};
-
-export default Testimonials;
+}

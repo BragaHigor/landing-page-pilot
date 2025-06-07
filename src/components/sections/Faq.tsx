@@ -1,5 +1,5 @@
-import Pretitle from "./Pretitle";
-import FaqItem from "./FaqItem";
+import { Pretitle } from "./Pretitle";
+import { FaqItem } from "./FaqItem";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/variants";
 
@@ -44,7 +44,7 @@ const faqItemVariants = {
    }),
 };
 
-const Faq = () => {
+export function Faq() {
    return (
       <section className="pt-16 xl:pt-32">
          <div className="container mx-auto">
@@ -86,6 +86,4 @@ const Faq = () => {
          </div>
       </section>
    );
-};
-
-export default Faq;
+}

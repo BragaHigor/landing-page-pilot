@@ -9,8 +9,8 @@ import {
    PiUserGearFill,
 } from "react-icons/pi";
 import Image from "next/image";
-import Button from "./Button";
-import Pretitle from "./Pretitle";
+import { Button } from "./Button";
+import { Pretitle } from "./Pretitle";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/variants";
 
@@ -111,7 +111,7 @@ const fadeInVariant = {
    show: { opacity: 1, transition: { duration: 0.2, delay: 0.1 } },
 };
 
-const Services = () => {
+export function Services() {
    const [activeTab, setActiveTab] = useState("construction");
    return (
       <section id="services" className="pt-16 xl:pt-32">
@@ -224,6 +224,4 @@ const Services = () => {
          </div>
       </section>
    );
-};
-
-export default Services;
+}
